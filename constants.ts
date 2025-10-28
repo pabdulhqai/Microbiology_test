@@ -8,21 +8,21 @@ export const QUIZ_QUESTIONS: Question[] = [
       "Malignant tertian malaria (48 hour cycles of fever)",
       "Benign tertian malaria",
       "Quartan malaria (72 hour cycles of fever)",
-      "None of the above"
+      "Relapsing malaria"
     ],
     correctAnswerIndex: 0,
-    explanation: "P. falciparum causes malignant tertian malaria, the most severe type, with a 48-hour cycle of fever. The term 'malignant' refers to its high parasite load and potential for severe complications like cerebral malaria. P. vivax causes benign tertian malaria, and P. malariae causes quartan malaria."
+    explanation: "P. falciparum causes malignant tertian malaria, the most severe form, with a 48-hour fever cycle. The term 'malignant' highlights its potential for severe, life-threatening complications like cerebral malaria, severe anemia, and organ failure due to high parasitemia and cytoadherence of infected red blood cells in capillaries. P. vivax causes benign tertian malaria, P. malariae causes quartan malaria, and P. ovale/vivax are known for causing relapses."
   },
   {
-    question: "Plasmodium vivax is the causative agent of:",
+    question: "Plasmodium vivax is well known for causing:",
     options: [
-      "Malignant tertian malaria (48 hour cycles of fever)",
-      "Benign tertian malaria (48 hour cycles of fever)",
-      "Quartan malaria (72 hour cycles of fever)",
-      "None of the above"
+      "Malignant tertian malaria",
+      "Benign tertian malaria with potential for relapses",
+      "Quartan malaria with risk of nephrotic syndrome",
+      "The most severe form of malaria"
     ],
     correctAnswerIndex: 1,
-    explanation: "P. vivax causes benign tertian malaria, which also has a 48-hour fever cycle but is generally less severe than P. falciparum. It is called 'benign' because it rarely causes the severe complications seen with falciparum malaria. It is also known for having a dormant liver stage (hypnozoites) that can cause relapses."
+    explanation: "P. vivax causes benign tertian malaria, which has a 48-hour fever cycle but is less severe than P. falciparum. Its defining characteristic is the formation of dormant liver stages called 'hypnozoites,' which can reactivate weeks or months later, causing relapses of the disease even after the blood-stage infection has been cleared."
   },
   {
     question: "Plasmodium malariae is the causative agent of:",
@@ -33,173 +33,172 @@ export const QUIZ_QUESTIONS: Question[] = [
       "West Africa tertian malaria"
     ],
     correctAnswerIndex: 0,
-    explanation: "P. malariae is distinct for causing quartan malaria, characterized by a 72-hour cycle between fever episodes. This longer cycle is due to the slower maturation of the parasite in red blood cells. It can lead to chronic infections and nephrotic syndrome."
+    explanation: "P. malariae is unique for causing quartan malaria, characterized by a 72-hour cycle between fever episodes due to its slower erythrocytic schizogony. Chronic, persistent, low-level infections can sometimes lead to immune-complex deposition in the kidneys, causing nephrotic syndrome."
   },
   {
     question: "Toxoplasma gondii is a protozoal sporozoa parasite which has a sexual life cycle in:",
     options: [
-      "The human",
-      "The dog",
-      "The cat",
-      "The pig"
+      "Humans (intermediate host)",
+      "Birds (intermediate host)",
+      "The cat (definitive host)",
+      "Pigs (intermediate host)"
     ],
     correctAnswerIndex: 2,
-    explanation: "Toxoplasma gondii is a coccidian parasite of cats. The sexual cycle occurs exclusively in the intestinal epithelium of felines (the definitive host), which then excrete infectious oocysts. Humans, dogs, and pigs are intermediate hosts where the asexual cycle occurs."
+    explanation: "Toxoplasma gondii is a coccidian parasite whose sexual life cycle occurs exclusively in the intestinal epithelium of felines (cats), which are the definitive hosts. Cats shed infectious oocysts in their faeces. Humans, birds, and pigs are all intermediate hosts where only the asexual cycle (tachyzoites and bradyzoites) occurs."
   },
   {
-    question: "In Toxoplasma gondii, the infective stage for human during the sexual life is:",
+    question: "In Toxoplasma gondii, the infective stage for humans acquired from undercooked meat is:",
     options: [
-      "The oocytes",
-      "The tachyzoites",
-      "The bradyzoites",
-      "None of the above"
+      "The oocyst",
+      "The tachyzoite",
+      "The bradyzoite (in tissue cysts)",
+      "The sporozoite"
     ],
-    correctAnswerIndex: 0,
-    explanation: "Humans are infected by ingesting oocysts in food or water soiled with cat faeces, or by eating undercooked meat containing tissue cysts (bradyzoites). Tachyzoites are the rapidly multiplying form responsible for acute infection, but oocysts and bradyzoites are the primary infective stages from the environment and food, respectively."
+    correctAnswerIndex: 2,
+    explanation: "Humans can be infected in two primary ways: 1) by ingesting oocysts from sources contaminated with cat faeces, or 2) by eating undercooked meat containing tissue cysts. These tissue cysts contain the slow-replicating bradyzoites, which are the infective stage in this context. Tachyzoites are the rapidly-multiplying form seen in acute infection but are not the typical infective stage from food."
   },
   {
     question: "Leishmania is a protozoal haemoflagellate parasite which is transported to human by the bite of:",
     options: [
       "Tsetse fly",
-      "House fly",
+      "Reduviid ('kissing') bug",
       "Sand fly",
-      "Horse fly"
+      "Anopheles mosquito"
     ],
     correctAnswerIndex: 2,
-    explanation: "Leishmania species are intracellular parasites of humans, transmitted by the bites of phlebotomine sandflies. The tsetse fly transmits Trypanosoma brucei (sleeping sickness)."
+    explanation: "Leishmania species are transmitted by the bites of infected female phlebotomine sandflies. The Tsetse fly transmits African Trypanosomiasis, the reduviid bug transmits Chagas' disease, and the Anopheles mosquito transmits malaria."
   },
   {
-    question: "In the Leishmania species life cycle, the infective stage for human is:",
+    question: "In the Leishmania species life cycle, the infective stage injected into a human is:",
     options: [
       "The amastigote",
       "The promastigote",
       "The trypomastigote",
-      "The gametocytes"
+      "The hypnozoite"
     ],
     correctAnswerIndex: 1,
-    explanation: "The promastigote is the elongated, flagellated form that develops in the midgut of the sandfly host. It is injected into humans during a bite and is the infective stage. Once inside human macrophages, it transforms into the amastigote, the replicating form."
+    explanation: "The promastigote is the motile, flagellated form that develops in the sandfly's gut. This is the infective stage that is injected into the human host during a blood meal. Once inside the human, it is phagocytosed by macrophages and transforms into the non-motile, replicating amastigote form."
   },
   {
     question: "Leishmania donovani is the causative agent of:",
     options: [
-      "Kala-azar visceral leishmaniasis",
-      "Oriental sore cutaneous leishmaniasis",
-      "American cutaneous leishmaniasis",
-      "None of the above"
+      "Kala-azar (visceral leishmaniasis)",
+      "Oriental sore (cutaneous leishmaniasis)",
+      "Mucocutaneous leishmaniasis",
+      "Chagas' disease"
     ],
     correctAnswerIndex: 0,
-    explanation: "The L. donovani complex causes kala-azar (visceral leishmaniasis), a severe systemic disease characterized by fever, weight loss, and massive enlargement of the spleen and liver (hepatosplenomegaly). L. tropica causes cutaneous leishmaniasis (oriental sore)."
+    explanation: "The L. donovani complex causes visceral leishmaniasis, also known as kala-azar. This is a severe systemic disease characterized by prolonged fever, weight loss, and massive hepatosplenomegaly. L. tropica causes cutaneous leishmaniasis, and L. braziliensis causes mucocutaneous leishmaniasis."
   },
   {
     question: "Leishmania tropica is the causative agent of:",
     options: [
-      "Kala-azar visceral leishmaniasis",
-      "Oriental sore cutaneous leishmaniasis",
-      "New world cutaneous leishmaniasis",
-      "None of the above"
+      "Kala-azar (visceral leishmaniasis)",
+      "Oriental sore (cutaneous leishmaniasis)",
+      "Sleeping Sickness",
+      "Post-kala-azar dermal leishmaniasis"
     ],
     correctAnswerIndex: 1,
-    explanation: "The L. tropica complex causes oriental sore (cutaneous leishmaniasis), a skin infection characterized by chronic, ulcerative sores. This is localized to the skin, unlike the systemic disease caused by L. donovani."
+    explanation: "The L. tropica complex causes Old World cutaneous leishmaniasis, a localized skin infection often called 'oriental sore'. It typically presents as a chronic, ulcerating papule at the site of the sandfly bite, which heals over time leaving a scar."
   },
   {
     question: "Trypanosoma brucei is the causative agent of:",
     options: [
-      "Acute Chagas disease",
-      "Chronic Chagas disease",
-      "Human sleeping sickness",
-      "None of the above"
+      "Acute Chagas' disease",
+      "Chronic Chagas' disease",
+      "Human African Trypanosomiasis (Sleeping Sickness)",
+      "Kala-azar"
     ],
     correctAnswerIndex: 2,
-    explanation: "T. brucei lives and multiplies in the human bloodstream and invades the CNS to cause human African trypanosomiasis, or sleeping sickness. Chagas disease is caused by Trypanosoma cruzi."
+    explanation: "T. brucei is transmitted by the tsetse fly and causes sleeping sickness. The parasite initially multiplies in the blood and lymph (haemolymphatic stage) before invading the central nervous system (neurological stage), leading to the characteristic sleep disturbances, neurological decline, and ultimately death if untreated. Chagas' disease is caused by T. cruzi."
   },
   {
     question: "Trypanosoma cruzi is the causative agent of:",
     options: [
-      "Acute Chagas disease",
-      "Chronic Chagas disease",
-      "All of the above (meaning both A and B)",
+      "Chagas' disease (both acute and chronic forms)",
+      "Sleeping Sickness only",
+      "Visceral leishmaniasis only",
       "None of the above"
     ],
-    correctAnswerIndex: 2,
-    explanation: "T. cruzi is an intracellular parasite causing both acute and chronic Chagas' disease. The acute phase can be asymptomatic or cause fever and swelling, while the chronic phase, developing years later, can lead to severe and life-threatening heart (cardiomyopathy) and gut (megacolon, megaesophagus) complications."
+    correctAnswerIndex: 0,
+    explanation: "T. cruzi causes Chagas' disease, which has two phases. The acute phase can be mild or asymptomatic. The chronic phase develops years later in a subset of patients and is characterized by severe and life-threatening damage to the heart (cardiomyopathy) and digestive system (megacolon, megaesophagus)."
   },
   {
-    question: "Rickettsiae are small aerobic bacteria which like other bacteria have the following except:",
+    question: "Rickettsiae are small aerobic bacteria which are obligate intracellular parasites primarily because they lack:",
     options: [
       "A cell wall with inner and outer membranes",
       "RNA and DNA",
       "Peptidoglycan in the cell wall",
-      "Enzymes for energy metabolism"
+      "Enzymes for independent energy metabolism"
     ],
     correctAnswerIndex: 3,
-    explanation: "Unlike most bacteria, Rickettsiae are 'energy parasites.' They lack the metabolic pathways (like glycolysis and the Krebs cycle) to produce their own ATP, making them obligate intracellular parasites that must rely on the host cell's energy supply."
+    explanation: "Unlike most bacteria, Rickettsiae are 'energy parasites.' They possess a cell wall, genetic material (DNA/RNA), and peptidoglycan, but they lack the key metabolic pathways to generate their own ATP. This makes them completely dependent on the host cell's energy supply, forcing them into an obligate intracellular lifestyle."
   },
   {
-    question: "Rickettsia prowazeckii is the causative agent of:",
+    question: "Rickettsia prowazekii, transmitted by the human body louse, is the causative agent of:",
     options: [
       "Epidemic typhus",
-      "Endemic typhus",
+      "Endemic (murine) typhus",
       "Scrub typhus",
-      "None of the above"
+      "Rocky Mountain Spotted Fever"
     ],
     correctAnswerIndex: 0,
-    explanation: "R. prowazekii causes epidemic louse-borne typhus. This form is called 'epidemic' because it can spread rapidly in crowded, unhygienic conditions where body lice are common, such as during wars or famines. Humans are the principal host."
+    explanation: "R. prowazekii causes epidemic typhus. It is termed 'epidemic' because its vector, the human body louse, thrives in crowded, unhygienic conditions (e.g., during war and famine), leading to rapid, large-scale outbreaks. Humans are the main reservoir. Endemic typhus is caused by R. typhi and is transmitted by rat fleas."
   },
   {
-    question: "Rickettsia typhi is the causative agent of:",
+    question: "Rickettsia typhi, transmitted by the rat flea, is the causative agent of:",
     options: [
       "Epidemic typhus",
-      "Endemic typhus",
-      "Scrub typhus",
-      "None of the above"
+      "Endemic (murine) typhus",
+      "Q fever",
+      "Trench fever"
     ],
     correctAnswerIndex: 1,
-    explanation: "R. typhi causes endemic (or murine) typhus. It is 'endemic' because it is maintained in a natural reservoir of rats and is transmitted to humans by rat fleas. Cases are sporadic and do not typically cause large epidemics."
+    explanation: "R. typhi causes endemic (or murine) typhus. It is 'endemic' as it is maintained in a natural animal reservoir (rats) and transmitted sporadically to humans by the rat flea. It does not typically cause large epidemics like louse-borne typhus."
   },
   {
-    question: "Coxiella burnetii is the causative agent of:",
+    question: "Coxiella burnetii, typically transmitted by inhalation of aerosols from infected farm animals, causes:",
     options: [
       "Scrub typhus",
       "Spotted fever",
       "Q fever",
-      "None of the above"
+      "Typhoid fever"
     ],
     correctAnswerIndex: 2,
-    explanation: "C. burnetii is the causative agent of Q fever. It is unique among Rickettsiaceae for its spore-like structures, which make it highly resistant in the environment, and its primary transmission route via inhalation of contaminated aerosols from infected animals (like cattle and sheep), rather than an insect vector."
+    explanation: "C. burnetii is the agent of Q fever. It is unique among this group as it forms a resilient, spore-like small-cell variant that survives well in the environment. Its primary transmission route is not an arthropod bite but the inhalation of contaminated aerosols from infected animals (cattle, sheep, goats) or their birth products. It often presents as an atypical pneumonia."
   },
   {
-    question: "Rickettsiae virulence varies between species due to the possible factors except:",
+    question: "The primary pathogenic mechanism of most Rickettsial diseases involves damage to which host cells?",
     options: [
-      "Lipopolysaccharide",
-      "Toxins",
-      "Phospholipase A",
-      "Cell destruction due to intracellular replication",
-      "None of the above"
+      "Hepatocytes (liver cells)",
+      "Alveolar macrophages",
+      "Vascular endothelial cells",
+      "Neurons"
     ],
-    correctAnswerIndex: 4,
-    explanation: "All listed options (Lipopolysaccharide, toxins, Phospholipase A, and intracellular replication) are considered virulence factors for Rickettsiae, contributing to their ability to invade host cells, replicate, and cause disease. Therefore, 'None of the above' is the correct choice, as none of them is an exception."
+    correctAnswerIndex: 2,
+    explanation: "The hallmark of rickettsial pathogenesis is the invasion and replication within vascular endothelial cells, which line the small blood vessels. This leads to vasculitis (inflammation of blood vessels), increased vascular permeability, edema, and hemorrhage, accounting for the characteristic rash and multi-organ damage."
   },
   {
-    question: "Rickettsiae virulence varies between species due to the possible factors except:",
+    question: "Which of the following is a key virulence factor used by Rickettsia to escape from the host cell's phagosome into the cytoplasm?",
     options: [
-      "Lipopolysaccharide",
+      "Lipopolysaccharide (LPS)",
       "Phospholipase A",
-      "Toxins",
-      "Phospholipase B"
+      "Catalase",
+      "Coagulase"
     ],
-    correctAnswerIndex: 3,
-    explanation: "Phospholipase A is a known virulence factor used by Rickettsiae to dissolve the host cell's phagosomal membrane and escape into the cytoplasm to replicate. While other phospholipases exist in biology, Phospholipase B is not described as a key virulence factor for this genus."
+    correctAnswerIndex: 1,
+    explanation: "Phospholipase A is a critical virulence factor for Rickettsia. After being engulfed by a host cell into a phagosome, the bacteria use this enzyme to degrade the phagosomal membrane, allowing them to escape into the nutrient-rich cytoplasm where they can freely replicate. LPS is an endotoxin that causes inflammation but does not facilitate escape."
   },
   {
-    question: "Acute pyrexia of unknown origin is caused by which of the following bacteria:",
+    question: "Which of the following infections is a recognized cause of classical Pyrexia of Unknown Origin (PUO)?",
     options: [
+      "Tuberculosis (especially extrapulmonary)",
+      "Intra-abdominal abscess",
       "Brucellosis",
-      "Salmonellosis",
-      "Tuberculosis",
       "All of the above"
     ],
     correctAnswerIndex: 3,
-    explanation: "Classical Pyrexia of Unknown Origin (PUO) has a broad differential diagnosis. Infections are a primary cause, and this includes systemic bacterial infections like Brucellosis, Salmonellosis (Enteric fever/Typhoid), and extrapulmonary Tuberculosis. Therefore, all of the listed options are potential causes."
+    explanation: "Classical PUO has a very broad differential diagnosis, with infections being a leading cause. All the options listed are classic infectious causes: extrapulmonary or miliary Tuberculosis, deep-seated occult abscesses (e.g., in the liver or abdomen), and systemic zoonotic infections like Brucellosis can all present with prolonged fever that is difficult to diagnose."
   },
   {
     question: "Acute pyrexia of unknown origin is caused by the following infections:",
@@ -210,40 +209,40 @@ export const QUIZ_QUESTIONS: Question[] = [
       "All of the above"
     ],
     correctAnswerIndex: 3,
-    explanation: "The list of infectious causes for PUO is extensive and includes zoonotic diseases like Brucellosis and Psittacosis (from birds), as well as chronic infections like Tuberculosis. Because many different infections can present this way, 'All of the above' is correct."
+    explanation: "The list of infectious causes for PUO is extensive and includes zoonotic diseases like Brucellosis (from livestock) and Psittacosis (from birds), as well as chronic infections like Tuberculosis which can present with non-specific systemic symptoms. Because many different infections can present this way, 'All of the above' is correct."
   },
   {
     question: "Acute pyrexia of unknown origin is classically defined as:",
     options: [
-      "fever for 1 week without known cause",
-      "fever for 2 weeks without known cause",
-      "fever for 3 weeks without known cause",
-      "fever for 4 weeks without known cause"
+      "A fever for 1 week without a known cause",
+      "A fever for 2 weeks without a known cause",
+      "A fever >38.3°C for at least 3 weeks with no cause found after 1 week of investigation",
+      "Any fever in a hospitalized patient"
     ],
     correctAnswerIndex: 2,
-    explanation: "Classically, PUO was defined by Petersdorf and Beeson in 1961 as a fever higher than 38.3°C (101°F) on several occasions, lasting for at least 3 weeks, for which no cause could be found after one week of inpatient investigation."
+    explanation: "The classic 1961 Petersdorf and Beeson criteria for PUO define it as: 1) A temperature greater than 38.3°C (101°F) on several occasions, 2) a duration of fever for at least three weeks, and 3) the failure to establish a diagnosis after one week of inpatient investigation. This strict definition helps to exclude short-lived viral illnesses."
   },
   {
-    question: "The most common cause of septicemia from a focal source in the skin is:",
+    question: "The most common causes of septicemia from a focal source in the skin include:",
     options: [
-      "S. aureus",
-      "S. epidermidis",
-      "S. pyogenes",
-      "all of the above"
+      "Staphylococcus aureus and Streptococcus pyogenes",
+      "Haemophilus influenzae",
+      "Neisseria meningitidis",
+      "Listeria monocytogenes"
     ],
-    correctAnswerIndex: 3,
-    explanation: "Skin is a common focal source for septicaemia. Causative organisms include Staphylococcus aureus (from boils or cellulitis), coagulase-negative staphylococci like S. epidermidis (often from IV lines), and Streptococcus pyogenes (from erysipelas or cellulitis). All are significant pathogens."
+    correctAnswerIndex: 0,
+    explanation: "The skin is a primary barrier, and breaches can lead to septicaemia. The most common causative organisms are part of the skin flora or are common skin pathogens. Staphylococcus aureus (from abscesses, boils, cellulitis) and Streptococcus pyogenes (from erysipelas, cellulitis) are the leading causes. H. influenzae and N. meningitidis are more associated with respiratory and CNS sources, respectively."
   },
   {
-    question: "The most common cause of septicemia from a focal source in the heart is:",
+    question: "The most common causes of septicemia from a focal source in the heart (infective endocarditis) are:",
     options: [
-      "S. pyogenes",
-      "S. agalactiae",
-      "S. aureus",
-      "all of the above"
+      "Streptococci and Staphylococci",
+      "Gram-negative rods",
+      "Anaerobes",
+      "Fungi"
     ],
-    correctAnswerIndex: 3,
-    explanation: "Septicemia originating from the heart (infective endocarditis) is commonly caused by bacteria that colonize heart valves. Key culprits include various species of Streptococci (like S. pyogenes, S. agalactiae, and viridans streptococci) and Staphylococci (especially S. aureus, which can cause acute, destructive endocarditis)."
+    correctAnswerIndex: 0,
+    explanation: "Septicemia originating from infective endocarditis is most frequently caused by Gram-positive cocci. Key culprits include various species of Streptococci (especially viridans streptococci, which colonize the oral cavity and can enter the bloodstream after dental procedures) and Staphylococci (especially S. aureus, which causes a more acute and destructive endocarditis)."
   }
 ];
 
@@ -254,28 +253,27 @@ export const LEARNING_TOPICS: Topic[] = [
     category: 'Parasitology',
     content: `
       <h3 class="text-xl font-bold mb-2 text-sky-700">Plasmodia (Malaria)</h3>
-      <p class="mb-4">Plasmodia are sporozoan parasites that cause malaria in humans. The infection is transmitted by female Anopheles mosquitoes.</p>
+      <p class="mb-4">Plasmodia are sporozoan parasites transmitted by female Anopheles mosquitoes that cause malaria, a major global health problem.</p>
       
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Key Species:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Key Species and Clinical Features:</h4>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong class="text-slate-800">P. falciparum:</strong> Causes malignant tertian malaria, the most severe form. It has a 48-hour cycle of fever.</li>
-        <li><strong class="text-slate-800">P. vivax:</strong> Causes benign tertian malaria, the most widely distributed form. It also has a 48-hour fever cycle and can cause relapses.</li>
-        <li><strong class="text-slate-800">P. malariae:</strong> Causes quartan malaria, characterized by a 72-hour cycle of fever.</li>
-        <li><strong class="text-slate-800">P. ovale:</strong> A cause of tertian malaria (48-hour cycle) in West Africa, relatively uncommon.</li>
+        <li><strong class="text-slate-800">P. falciparum:</strong> Causes malignant tertian malaria (48-hour fever cycle). This is the most severe form, responsible for most malaria deaths. High parasitemia levels can lead to microvascular obstruction and severe complications like cerebral malaria, acute respiratory distress syndrome (ARDS), and renal failure.</li>
+        <li><strong class="text-slate-800">P. vivax:</strong> Causes benign tertian malaria (48-hour fever cycle). While less severe than falciparum, it is notable for forming dormant liver-stage parasites called <strong class="text-slate-800">hypnozoites</strong>, which can cause relapsing infections weeks to months after the initial illness.</li>
+        <li><strong class="text-slate-800">P. malariae:</strong> Causes quartan malaria (72-hour fever cycle). It can persist for years as a low-level, chronic infection and may lead to immune-complex mediated kidney damage (nephrotic syndrome).</li>
+        <li><strong class="text-slate-800">P. ovale:</strong> A cause of tertian malaria, similar to P. vivax (including hypnozoite formation), primarily found in West Africa.</li>
       </ul>
 
       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Life Cycle & Pathogenesis:</h4>
-      <p class="mb-2">The life cycle is complex, involving a sexual cycle in the mosquito and asexual cycles in human liver and red blood cells.</p>
-      <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li>A mosquito injects <strong class="text-slate-800">sporozoites</strong> into the human host.</li>
-        <li>Sporozoites travel to the liver, mature, and release <strong class="text-slate-800">merozoites</strong>. This is the asymptomatic liver (exo-erythrocytic) stage.</li>
-        <li>Merozoites invade red blood cells (erythrocytes) and multiply asexually. The rupture of these cells releases more merozoites, causing the clinical symptoms (fever, chills).</li>
-        <li>Some parasites develop into male and female <strong class="text-slate-800">gametocytes</strong>, which are ingested by another mosquito during a blood meal, continuing the cycle.</li>
-      </ul>
+      <p class="mb-2">The complex life cycle involves asexual reproduction in humans (intermediate host) and sexual reproduction in mosquitoes (definitive host).</p>
+      <ol class="list-decimal pl-5 space-y-2 mb-4">
+        <li><strong>Inoculation:</strong> A mosquito injects sporozoites into the human host during a blood meal.</li>
+        <li><strong>Liver Stage (Exo-erythrocytic):</strong> Sporozoites travel to the liver, invade hepatocytes, and mature into schizonts, which rupture to release thousands of merozoites. This stage is asymptomatic.</li>
+        <li><strong>Blood Stage (Erythrocytic):</strong> Merozoites invade red blood cells (RBCs), where they multiply asexually. The periodic, synchronous rupture of infected RBCs releases more merozoites and parasite toxins, causing the classic clinical symptoms of malaria: cyclical fever, chills, and sweats. This RBC destruction also leads to anemia.</li>
+        <li><strong>Gametogenesis:</strong> Some parasites develop into male and female gametocytes. These are ingested by a mosquito, where they fuse to begin the sexual cycle, producing new sporozoites.</li>
+      </ol>
       
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Clinical Features & Diagnosis:</h4>
-      <p class="mb-2">The classic symptom is a paroxysm of fever, chills, and sweats. Anemia (due to red cell destruction) and splenomegaly are common. P. falciparum can cause severe malaria, including cerebral malaria, which is a medical emergency.</p>
-      <p>The gold standard for diagnosis is the microscopic examination of a Giemsa-stained blood smear to identify the parasites.</p>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Diagnosis:</h4>
+      <p>The gold standard for diagnosis is the microscopic examination of a Giemsa-stained thick and thin blood smear. This allows for the identification of the parasite species and quantification of parasite density. Rapid diagnostic tests (RDTs) detecting parasite antigens are also widely used.</p>
     `
   },
   {
@@ -284,24 +282,23 @@ export const LEARNING_TOPICS: Topic[] = [
     category: 'Parasitology',
     content: `
       <h3 class="text-xl font-bold mb-2 text-sky-700">Toxoplasma gondii</h3>
-      <p class="mb-4">T. gondii is a coccidian parasite whose primary host is the cat. The sexual cycle of the parasite occurs in cats, producing oocytes which are shed in the faeces.</p>
+      <p class="mb-4">T. gondii is a ubiquitous coccidian parasite. Its definitive host is the cat, where the sexual cycle occurs, but it can infect virtually all warm-blooded animals, including humans, as intermediate hosts.</p>
       
       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Life Cycle & Transmission:</h4>
+      <p class="mb-2">Infection in humans occurs through three main routes:</p>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong>Definitive Host:</strong> The cat, where the sexual cycle occurs.</li>
-        <li><strong>Intermediate Hosts:</strong> Humans and other animals become infected by ingesting <strong class="text-slate-800">oocytes</strong> from sources contaminated with cat faeces, or by consuming undercooked meat containing tissue cysts (<strong class="text-slate-800">bradyzoites</strong>).</li>
-        <li><strong>Asexual Cycle in Humans:</strong> In humans, the asexual cycle produces <strong class="text-slate-800">tachyzoites</strong> (the rapidly multiplying form that causes acute disease) and <strong class="text-slate-800">bradyzoites</strong> (which form dormant tissue cysts, typically in muscle and brain).</li>
+        <li><strong>Foodborne:</strong> Eating undercooked or raw meat containing dormant tissue cysts (<strong class="text-slate-800">bradyzoites</strong>). This is a common route of infection.</li>
+        <li><strong>Zoonotic (from cats):</strong> Ingesting infectious <strong class="text-slate-800">oocytes</strong> from food, water, or soil contaminated with cat faeces.</li>
+        <li><strong>Congenital:</strong> A mother who acquires a primary infection during pregnancy can transmit the parasite to the fetus transplacentally.</li>
       </ul>
+      <p>Once ingested, the parasite differentiates into <strong class="text-slate-800">tachyzoites</strong>, the rapidly multiplying form responsible for tissue damage in acute infection. The immune system eventually controls this proliferation, leading to the formation of dormant <strong class="text-slate-800">bradyzoite</strong> cysts in tissues like the brain, muscle, and eyes, which can persist for the life of the host.</p>
 
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Clinical Significance:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Clinical Syndromes:</h4>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong>Immunocompetent persons:</strong> Usually asymptomatic or a mild, flu-like illness.</li>
-        <li><strong>Congenital Toxoplasmosis:</strong> A primary infection during pregnancy can be transmitted to the fetus, potentially causing serious damage (e.g., chorioretinitis, hydrocephalus, intracranial calcifications).</li>
-        <li><strong>Immunocompromised Hosts:</strong> Reactivation of latent infection (from bradyzoite cysts) can be life-threatening, often causing encephalitis in patients with AIDS.</li>
+        <li><strong>Immunocompetent Persons:</strong> Most infections are asymptomatic. A minority develop a mild, self-limiting mononucleosis-like syndrome with fever and lymphadenopathy.</li>
+        <li><strong>Congenital Toxoplasmosis:</strong> Can have devastating consequences for the fetus, including the classic triad of chorioretinitis (eye inflammation), hydrocephalus (fluid in the brain), and intracranial calcifications.</li>
+        <li><strong>Immunocompromised Hosts (e.g., AIDS patients):</strong> Reactivation of latent cysts is a major concern, often leading to life-threatening toxoplasmic encephalitis, which presents with headache, fever, focal neurological deficits, and seizures.</li>
       </ul>
-
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Prevention:</h4>
-      <p>Key prevention strategies include thoroughly cooking meat, washing hands after gardening or handling raw meat, and pregnant women avoiding the cleaning of cat litter boxes.</p>
     `
   },
   {
@@ -310,22 +307,22 @@ export const LEARNING_TOPICS: Topic[] = [
     category: 'Parasitology',
     content: `
       <h3 class="text-xl font-bold mb-2 text-sky-700">Leishmania</h3>
-      <p class="mb-4">Leishmania are protozoal haemoflagellates transmitted to humans by the bite of a <strong class="text-slate-800">sandfly</strong>. They are intracellular parasites that replicate within mammalian host cells, particularly macrophages.</p>
+      <p class="mb-4">Leishmania are protozoal haemoflagellates transmitted by the bite of phlebotomine <strong class="text-slate-800">sandflies</strong>. They are obligate intracellular parasites that replicate within host macrophages.</p>
       
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Life Cycle & Key Forms:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Life Cycle & Pathogenesis:</h4>
+      <p class="mb-2">The parasite exists in two main forms:</p>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong class="text-slate-800">Promastigote:</strong> This is the elongated, flagellated, infective stage found in the sandfly. It is injected into the human during a bite.</li>
-        <li><strong class="text-slate-800">Amastigote:</strong> This is the rounded, non-flagellated, replicating form found inside host macrophages in mammals.</li>
+        <li><strong class="text-slate-800">Promastigote:</strong> The motile, flagellated, infective stage that is injected by the sandfly into the human host.</li>
+        <li><strong class="text-slate-800">Amastigote:</strong> The non-motile, ovoid, replicating form that resides within the phagolysosomes of macrophages in the mammalian host.</li>
       </ul>
+      <p>The clinical manifestation of the disease depends on the Leishmania species and the host's immune response. Pathogenesis is driven by the destruction of infected macrophages and the resulting inflammatory response.</p>
       
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Key Species & Diseases:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Major Clinical Syndromes:</h4>
        <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong class="text-slate-800">L. donovani complex (Visceral Leishmaniasis):</strong> Also known as kala-azar, this is a severe systemic illness. It causes chronic fever, weight loss, massive hepatosplenomegaly (enlargement of liver and spleen), and pancytopenia. It is fatal if left untreated.</li>
-        <li><strong class="text-slate-800">L. tropica complex (Cutaneous Leishmaniasis):</strong> Also known as oriental sore, this form causes localized skin lesions. It begins as a papule at the site of the sandfly bite, enlarges, and ulcerates, eventually healing to leave a depressed scar.</li>
+        <li><strong class="text-slate-800">Visceral Leishmaniasis (Kala-azar):</strong> Caused by the <strong class="text-slate-800">L. donovani</strong> complex. This is a severe, systemic disease where parasites disseminate to visceral organs. It is characterized by chronic fever, weight loss, massive hepatosplenomegaly, and pancytopenia (anemia, leukopenia, thrombocytopenia). It is fatal if untreated. Diagnosis involves finding amastigotes in bone marrow or splenic aspirates.</li>
+        <li><strong class="text-slate-800">Cutaneous Leishmaniasis:</strong> Caused by species like <strong class="text-slate-800">L. tropica</strong> or <strong class="text-slate-800">L. major</strong>. This form is localized to the skin, producing chronic papules that evolve into ulcers ("oriental sore"). These typically heal over months to years, leaving a permanent scar. Diagnosis is by identifying amastigotes in a skin biopsy or smear.</li>
+        <li><strong class="text-slate-800">Mucocutaneous Leishmaniasis:</strong> Caused by <strong class="text-slate-800">L. braziliensis</strong>, this form involves metastatic spread of parasites from a skin lesion to the naso-oropharyngeal mucosa, causing destructive and disfiguring lesions.</li>
       </ul>
-
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Diagnosis:</h4>
-      <p>Diagnosis is made by identifying amastigotes in tissue smears from bone marrow aspirates (for visceral) or skin lesion biopsies (for cutaneous).</p>
     `
   },
     {
@@ -334,20 +331,20 @@ export const LEARNING_TOPICS: Topic[] = [
     category: 'Parasitology',
     content: `
       <h3 class="text-xl font-bold mb-2 text-sky-700">Trypanosoma</h3>
-      <p class="mb-4">Trypanosomes are haemoflagellates that cause significant diseases in humans, transmitted by insect vectors.</p>
+      <p class="mb-4">Trypanosomes are haemoflagellates transmitted by insect vectors, causing two major diseases: African Sleeping Sickness and American Chagas' Disease.</p>
       
       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Trypanosoma brucei (African Sleeping Sickness)</h4>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong>Transmission:</strong> Transmitted by the tsetse fly. The parasite lives and multiplies in the human bloodstream and lymphatic system.</li>
-        <li><strong>Stage 1 (Haemolymphatic):</strong> Characterized by fever, headaches, joint pains, and enlarged lymph nodes (Winterbottom's sign).</li>
-        <li><strong>Stage 2 (Neurological):</strong> Occurs when the parasite crosses the blood-brain barrier. It leads to confusion, poor coordination, and disruption of the sleep cycle (hence 'sleeping sickness'), eventually progressing to coma and death if untreated.</li>
+        <li><strong>Transmission & Pathogenesis:</strong> Transmitted by the tsetse fly. The parasite is extracellular, living in the blood, lymph, and eventually the central nervous system (CNS). It evades the immune system through antigenic variation of its surface glycoproteins.</li>
+        <li><strong>Stage 1 (Haemolymphatic):</strong> The early stage is characterized by intermittent fever, headaches, and lymphadenopathy. Swelling of the posterior cervical lymph nodes (Winterbottom's sign) is characteristic.</li>
+        <li><strong>Stage 2 (Neurological):</strong> The late stage begins when the parasite crosses the blood-brain barrier, causing meningoencephalitis. This leads to profound personality changes, confusion, daytime somnolence and nighttime insomnia (hence 'sleeping sickness'), and eventually coma and death.</li>
       </ul>
 
       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Trypanosoma cruzi (Chagas' Disease)</h4>
       <ul class="list-disc pl-5 space-y-2">
-        <li><strong>Transmission:</strong> Transmitted by the reduviid ('kissing') bug. It is an intracellular parasite.</li>
-        <li><strong>Acute Phase:</strong> Often asymptomatic or mild, but can cause fever and swelling at the site of inoculation (chagoma) or unilateral eyelid swelling (Romaña's sign).</li>
-        <li><strong>Chronic Phase:</strong> Develops years later in 20-30% of infected individuals. It can lead to severe cardiac damage (cardiomyopathy, arrhythmias) and gastrointestinal complications (megacolon, megaesophagus).</li>
+        <li><strong>Transmission & Pathogenesis:</strong> Transmitted by reduviid ('kissing') bugs, which defecate on the skin after a blood meal. The parasites enter through the bite wound or mucous membranes. T. cruzi is an intracellular parasite, forming nests of amastigotes, particularly in muscle and nerve cells.</li>
+        <li><strong>Acute Phase:</strong> Often asymptomatic, especially in adults. When symptoms occur, they may include fever, malaise, and swelling at the site of inoculation (a chagoma) or unilateral periorbital edema (Romaña's sign).</li>
+        <li><strong>Chronic Phase:</strong> Develops in 20-30% of infected individuals after a long latent period. The persistent parasitic infection and associated immune response lead to severe organ damage, most notably Chagasic cardiomyopathy (arrhythmias, heart failure) and gastrointestinal disease like megaesophagus and megacolon.</li>
       </ul>
     `
   },
@@ -357,26 +354,21 @@ export const LEARNING_TOPICS: Topic[] = [
     category: 'Bacteriology',
     content: `
       <h3 class="text-xl font-bold mb-2 text-sky-700">Rickettsiae</h3>
-      <p class="mb-4">Rickettsiae are small, aerobic, Gram-negative bacteria that are obligate intracellular parasites, meaning they cannot replicate outside of a host cell.</p>
+      <p class="mb-4">Rickettsiae are small, Gram-negative bacteria that are obligate intracellular parasites, typically transmitted by arthropod vectors like lice, fleas, and ticks.</p>
       
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Characteristics & Pathogenesis:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Pathogenesis: The Vasculitis Model</h4>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li>They have a typical bacterial cell structure but crucially <strong class="text-slate-800">lack enzymes for energy metabolism</strong>, forcing them to steal ATP from the host cell.</li>
-        <li>The primary target cells are <strong class="text-slate-800">vascular endothelial cells</strong>. Replication inside these cells causes injury, leading to vasculitis (inflammation of blood vessels), increased vascular permeability, edema, and hemorrhage. This vasculitis is responsible for the characteristic rashes and multi-organ damage seen in rickettsial diseases.</li>
+        <li><strong>Target Cell:</strong> The primary target for most rickettsiae is the <strong class="text-slate-800">vascular endothelial cell</strong> that lines small blood vessels.</li>
+        <li><strong>Mechanism:</strong> After entering the cell, they use <strong class="text-slate-800">Phospholipase A</strong> to escape the phagosome and replicate freely in the cytoplasm. Their proliferation damages the endothelial cells, leading to widespread <strong class="text-slate-800">vasculitis</strong>.</li>
+        <li><strong>Consequences:</strong> This inflammation and damage increase vascular permeability, causing leakage of fluid into tissues (edema), loss of blood volume (hypovolemia), and extravasation of blood cells (petechial rash, hemorrhage). This is the underlying pathology for the clinical manifestations of most rickettsial diseases.</li>
       </ul>
       
-       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Virulence Factors:</h4>
-       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong class="text-slate-800">Lipopolysaccharide (LPS):</strong> An endotoxin that triggers inflammation.</li>
-        <li><strong class="text-slate-800">Phospholipase A:</strong> An enzyme used to dissolve the phagosomal membrane, allowing the bacteria to escape into the cytoplasm.</li>
-        <li><strong class="text-slate-800">Intracellular replication:</strong> Rapid multiplication leads to host cell destruction.</li>
-      </ul>
-      
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Key Species & Diseases:</h4>
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Key Diseases and Epidemiology:</h4>
        <ul class="list-disc pl-5 space-y-2">
-        <li><strong class="text-slate-800">R. prowazekii:</strong> Causes <strong class="text-slate-800">epidemic typhus</strong>, transmitted by the human body louse. Associated with crowded, unhygienic conditions.</li>
-        <li><strong class="text-slate-800">R. typhi:</strong> Causes <strong class="text-slate-800">endemic (murine) typhus</strong>, transmitted from a rat reservoir by the rat flea.</li>
-        <li><strong class="text-slate-800">Coxiella burnetii:</strong> Causes <strong class="text-slate-800">Q fever</strong>. It is unique as it is highly robust, forms spore-like structures, and is typically transmitted by inhalation of aerosols from infected farm animals (cattle, sheep, goats) rather than an arthropod vector. It often presents as atypical pneumonia.</li>
+        <li><strong class="text-slate-800">Epidemic Typhus (R. prowazekii):</strong> Transmitted by the human body louse. The reservoir is humans. Historically associated with massive epidemics in times of war and famine due to crowded, unhygienic conditions. Presents with high fever, headache, and a rash that starts on the trunk and spreads outwards.</li>
+        <li><strong class="text-slate-800">Endemic (Murine) Typhus (R. typhi):</strong> Transmitted by the rat flea. The reservoir is rodents. It is clinically similar to epidemic typhus but generally milder.</li>
+        <li><strong class="text-slate-800">Rocky Mountain Spotted Fever (R. rickettsii):</strong> Transmitted by ticks. A severe disease characterized by fever, headache, and a rash that characteristically begins on the wrists and ankles and spreads centrally.</li>
+        <li><strong class="text-slate-800">Q Fever (Coxiella burnetii):</strong> A unique rickettsial disease. Transmitted primarily by <strong class="text-slate-800">inhalation of aerosols</strong> from infected farm animals (cattle, sheep, goats). It forms a highly resistant spore-like variant. It does not typically cause a rash and often presents as an atypical pneumonia with fever and hepatitis.</li>
       </ul>
     `
   },
@@ -385,26 +377,34 @@ export const LEARNING_TOPICS: Topic[] = [
     title: 'Clinical Infections',
     category: 'Bacteriology',
     content: `
-      <h3 class="text-xl font-bold mb-2 text-sky-700">Sepsis & Septicaemia</h3>
-      <p class="mb-4"><strong class="text-slate-800">Septicaemia</strong> refers to the presence of bacteria in the blood (bacteraemia) that are causing a systemic illness. <strong class="text-slate-800">Sepsis</strong> is the clinical syndrome that results from this: a life-threatening organ dysfunction caused by a dysregulated host response to infection.</p>
-      
-      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Common Causes from Focal Sources:</h4>
+      <h3 class="text-xl font-bold mb-2 text-sky-700">Bacteraemia, Septicaemia, and Sepsis</h3>
+      <p class="mb-4">These terms describe a spectrum of severity related to bloodstream infections.</p>
       <ul class="list-disc pl-5 space-y-2 mb-4">
-        <li><strong class="text-slate-800">Skin & Soft Tissue:</strong> Very common source. Key organisms include <strong class="text-slate-800">Staphylococcus aureus</strong>, <strong class="text-slate-800">S. epidermidis</strong> (especially from IV lines), and <strong class="text-slate-800">S. pyogenes</strong>.</li>
-        <li><strong class="text-slate-800">Heart (Endocarditis):</strong> Common causes include <strong class="text-slate-800">Streptococci</strong> (e.g., viridans group, S. pyogenes) and <strong class="text-slate-800">Staphylococci</strong> (e.g., S. aureus).</li>
-        <li><strong class="text-slate-800">Urinary Tract:</strong> Often caused by Gram-negative rods like E. coli.</li>
-        <li><strong class="text-slate-800">Respiratory Tract:</strong> e.g., Streptococcus pneumoniae.</li>
+        <li><strong class="text-slate-800">Bacteraemia:</strong> The simple presence of viable bacteria in the blood, confirmed by a positive blood culture. It can be transient and asymptomatic.</li>
+        <li><strong class="text-slate-800">Septicaemia:</strong> A clinical term meaning bacteraemia that is causing a systemic illness, with symptoms like fever, chills, and tachycardia.</li>
+        <li><strong class="text-slate-800">Sepsis:</strong> A modern, more precise definition. It is a life-threatening <strong class="text-slate-800">organ dysfunction</strong> caused by a dysregulated host immune response to infection. It is a medical emergency.</li>
+        <li><strong class="text-slate-800">Septic Shock:</strong> A subset of sepsis with profound circulatory, cellular, and metabolic abnormalities, characterized by persistent hypotension requiring vasopressors to maintain blood pressure, and elevated lactate levels. It has a very high mortality rate.</li>
+      </ul>
+
+      <h4 class="font-semibold mb-2 mt-4 text-slate-600">Common Focal Sources of Septicaemia:</h4>
+      <ul class="list-disc pl-5 space-y-2 mb-4">
+        <li><strong class="text-slate-800">Skin:</strong> Abscesses, cellulitis, infected wounds, or intravascular devices. Common organisms: <strong class="text-slate-800">S. aureus</strong>, <strong class="text-slate-800">S. epidermidis</strong>, <strong class="text-slate-800">S. pyogenes</strong>.</li>
+        <li><strong class="text-slate-800">Heart (Infective Endocarditis):</strong> Infection of the heart valves. Common organisms: <strong class="text-slate-800">Streptococci</strong> (especially viridans group), <strong class="text-slate-800">Staphylococci</strong>.</li>
+        <li><strong class="text-slate-800">Lungs (Pneumonia):</strong> Common organisms: <strong class="text-slate-800">S. pneumoniae</strong>, <strong class="text-slate-800">H. influenzae</strong>.</li>
+        <li><strong class="text-slate-800">Abdomen:</strong> Peritonitis, abscesses, biliary tract infections. Common organisms: Aerobic Gram-negative rods (e.g., E. coli), anaerobes.</li>
+        <li><strong class="text-slate-800">Urinary Tract (Urosepsis):</strong> Common organisms: Gram-negative rods (e.g., E. coli).</li>
       </ul>
 
       <h3 class="text-xl font-bold mt-6 mb-2 text-sky-700">Pyrexia of Unknown Origin (PUO)</h3>
-      <p class="mb-4">Fever is a temperature greater than 38.3°C (101°F). PUO is a fever for which a cause has not been found despite thorough investigation.</p>
+      <p class="mb-4">PUO refers to a prolonged febrile illness without an established etiology despite intensive evaluation and diagnostic testing.</p>
       
-       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Classical PUO Definition & Causes:</h4>
-      <p class="mb-4">Classically, PUO is defined as a fever present for <strong class="text-slate-800">3 weeks</strong> with no identified cause. The main causes fall into three broad categories:</p>
+       <h4 class="font-semibold mb-2 mt-4 text-slate-600">Classical PUO: Definition & Causes</h4>
+      <p class="mb-4">The classic definition is a fever >38.3°C (101°F) lasting for at least <strong class="text-slate-800">3 weeks</strong> with no cause found after one week of inpatient investigation. The major categories of causes are:</p>
       <ul class="list-disc pl-5 space-y-2">
-        <li><strong class="text-slate-800">Infections (~30-40%):</strong> Systemic infections like Tuberculosis, endocarditis, and Brucellosis, or localized occult abscesses (e.g., intra-abdominal).</li>
-        <li><strong class="text-slate-800">Malignancies (~20-30%):</strong> Cancers, especially lymphoma and leukaemia, can present with fever as a primary symptom.</li>
-        <li><strong class="text-slate-800">Connective Tissue/Autoimmune Diseases (~10-20%):</strong> Conditions like Adult-onset Still's disease, systemic lupus erythematosus (SLE), and vasculitis.</li>
+        <li><strong class="text-slate-800">Infections (~30-40%):</strong> Often atypical presentations of common diseases. Key examples include systemic infections like extrapulmonary/miliary <strong class="text-slate-800">Tuberculosis</strong>, <strong class="text-slate-800">Brucellosis</strong>, and infective endocarditis, as well as localized occult abscesses (e.g., intra-abdominal, splenic).</li>
+        <li><strong class="text-slate-800">Malignancies (~20-30%):</strong> Fever can be a primary manifestation of cancer, especially hematologic malignancies like <strong class="text-slate-800">lymphoma</strong> and <strong class="text-slate-800">leukemia</strong>, and solid tumors like renal cell carcinoma.</li>
+        <li><strong class="text-slate-800">Non-infectious Inflammatory Diseases (~10-20%):</strong> Includes connective tissue diseases and vasculitides, such as Adult-onset Still's disease, systemic lupus erythematosus (SLE), and polyarteritis nodosa.</li>
+        <li><strong class="text-slate-800">Miscellaneous & Undiagnosed:</strong> This category includes drug fever, factitious fever, and a significant portion (up to 20%) where no diagnosis is ever made.</li>
       </ul>
     `
   }
